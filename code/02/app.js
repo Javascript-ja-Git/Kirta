@@ -37,15 +37,45 @@ alert('Temperatuur Fahrenheit skaalal on: ' + F); */
 
 // Tingimuslaused
 
-const color = prompt('Mis värvi on foori tuli?');
+// const color = prompt('Mis värvi on foori tuli?');
 
-if (color === 'roheline') {
+/* if (color === 'roheline') {
     alert('Liigu!');
 } else (color === 'punane'); {
     alert('Ära liigu!');
+} */
+
+/* if (color === 'roheline') {
+    alert('Võid üle tee minna!');   
+} else if (color === 'kollane') {
+    alert('Pead veel tükk aega ootama!');   
+} else if (color === 'punane') {
+    alert('Oota veel pisut!');
+} else {
+    alert('See ei ole foori tule värv!');
+} */
+
+// Parooli küsimine ja kontrollimine
+
+/* const password = prompt('Sisesta parool: ');
+
+const existingPassword = '123456';
+
+if (password !== existingPassword) {
+    alert('Parool on vale!');
+} else {
+    alert('Parool on õige!');
+} */    
+
+// Vanuse kontroll
+
+/* const age = prompt('Sisesta oma vanus: ');
+
+if (age >= 18) {
+    alert('Oled täisealine!');
+} else {
+    alert('Oled alaealine!');
 }
-
-
-    
+*/
 
 
