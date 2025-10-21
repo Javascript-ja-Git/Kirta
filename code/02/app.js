@@ -1,1 +1,3 @@
-alert('Tere maailm!');
+const name = prompt('Sisesta oma nimi');
+
+alert('Tere ' + name);
