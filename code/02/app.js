@@ -78,4 +78,56 @@ if (age >= 18) {
 }
 */
 
+// Tüübiteisendus / type casting
 
+/* const age = Number(prompt('Sisesta oma vanus: '));  
+
+alert(typeof age); */
+
+// Kalkulaator
+
+/* const arv1 = Number(prompt('Sisesta esimene arv: '));
+const arv2 = Number(prompt('Sisesta teine arv: '));
+
+const operator = prompt('Sisesta tehe: +, -, *, /'); */
+
+/* if (operator === '+') {
+    alert(arv1 + arv2);
+} else if (operator === '-') {
+    alert(arv1 - arv2);
+} else if (operator === '*') {
+    alert(arv1 * arv2);
+} else if (operator === '/') {
+    alert(arv1 / arv2);
+} else {
+    alert('See ei ole kehtiv tehe!');
+} */
+
+// Tsüklid
+
+// i = 10; i < 10; i++ (i väärtus suureneb  võrra)
+
+/*for (let i = 0; i < 10; i++) {
+    console.log(i);
+}   
+
+for (let index = 0; index < 11; index++) {
+    console.log(index);
+} */
+
+/* const count = 11;
+
+for (let index = 1; index < count; index = index + 1) {
+    console.log('1 * ', index, '=', 1 * index);
+} */
+
+// Korrutustabel
+
+const count = 11;
+
+for (let index = 1; index < count; index = index + 1) { 
+    for (let j = 1; j < count; j = j + 1) {
+        console.log(index + ' * ' + j + ' = ' + index * j);
+    }
+}
+    
