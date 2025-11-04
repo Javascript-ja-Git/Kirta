@@ -123,11 +123,30 @@ for (let index = 1; index < count; index = index + 1) {
 
 // Korrutustabel
 
-const count = 11;
+/* const count = 11;
 
 for (let index = 1; index < count; index = index + 1) { 
     for (let j = 1; j < count; j = j + 1) {
         console.log(index + ' * ' + j + ' = ' + index * j);
     }
+} */
+
+/* const password = prompt('Sisesta parool: ')
+
+if (password === '1234') {
+    alert('Parool on õige, tere tulemast!');
+} else {
+    alert('Parool on vale!');
+} */
+
+/* const password = '1234';
+
+if (password) {
+    alert('Something');
+} else {
+    alert('Something else');
+} */
+
+for (let i = 0; i < 6; i++) {
+    console.log(i);
 }
-    
