@@ -57,7 +57,7 @@ console.log(triangleArea(8, 4));
 console.log(triangleArea(-5, 10));
 console.log(triangleArea(5, -10)); */
 
-function greeting(name) {
+/* function greeting(name) {
     const message = 'Tere ' + name;                          
     console.log(message);
     return;
@@ -65,5 +65,40 @@ function greeting(name) {
 
 const result = greeting('John');
 
-console.log(result);
+console.log(result); */
 
+// --- Neljana loengu algus
+
+/* for (let i = 0; i < 10; i++) {
+    console.log(i);
+} */
+
+/* let i = 0;
+
+while (i < 10) {
+    console.log(i);
+    i = i + 2;
+} */
+
+/* let i = 0;
+
+do {
+    console.log(i);
+    i = i + 2;
+} while (i < 10); */
+
+function divide(a, b) {
+    if (b === 0) {
+        return 'Divisor cannot be zero';
+    }
+    const result = a / b;
+    return result;
+}
+
+// const result = divide(10, 2);
+
+console.log(divide(4, 2));
+console.log(divide(4, 0));
+console.log(divide(10, 0));
+console.log(divide(4, 3));
+console.log(divide(823434, 3434));
