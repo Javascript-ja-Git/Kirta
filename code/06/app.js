@@ -53,4 +53,18 @@ for(let i = 0; i < tvs.length; i++) {
 
 console.log(tvs[0].weight) */
 
+function changeTitle() {
+    let text = document.getElementById('title-input').value.trim();
+    if (text === '') {
+        text = 'Kuues loeng';
+    }
+    const title = document.getElementById('title');
+    title.style.color = 'red';  // Set color before changing the innerHTML
+    title.innerHTML = text;
+}
+
+function changeSubTitle() {
+    console.log(document.getElementById('sub-title').innerHTML = 'Uus alam pealkiri');
+}
+
 
