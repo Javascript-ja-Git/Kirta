@@ -6,14 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title" style="color: blue">Kuues loeng</h1>
+    <h1 id="title">Kuues loeng</h1>
     <h2 id="sub-title">Teine pealkiri</h2>
-    <input type="text" id="title-input">
-    <br />
-    <button onclick="changeTitle()">Nupp</button>
-    <br />
-    <button onclick="changeSubTitle()">Nupp</button>
-    <br />
+    
+    <div>
+        <label for="color-picker">Vali värv:</label>
+        <input type="color" id="color-picker" onchange="changeTitle()">
+    </div>
+    
+    <div>
+        <label for="text-title-input">Pealkiri:</label>
+        <input oninput="changeTitle()" type="text" id="text-title-input" placeholder="Sisesta pealkiri">
+    </div>
+    
+    <div>
+        <label for="text-sub-title-input">Alapealkiri:</label>
+        <input oninput="changeSubTitle()" type="text" id="text-sub-title-input" placeholder="Sisesta alapealkiri">
+    </div>
+    
+    <div>
+        <button onclick="changeTitle()">Uuenda pealkirja</button>
+        <button onclick="changeSubTitle()">Uuenda alapealkirja</button>
+    </div>
+
+
+    <hr>
+    <h2 id="sisselogimine">Sisselogimine</h2>
+    <h3 id="staatus">Sisesta PIN kood</h3>
+
+    <div>
+        <label for="pin">PIN kood:</label>
+        <input type="password" id="pin" placeholder="Sisesta 4-kohaline PIN">
+        <button onclick="login()">Logi sisse</button>
+    </div>
+    
     <script src="app.js"></script>
 </body> 
 </html>

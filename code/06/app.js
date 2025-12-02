@@ -54,17 +54,42 @@ for(let i = 0; i < tvs.length; i++) {
 console.log(tvs[0].weight) */
 
 function changeTitle() {
-    let text = document.getElementById('title-input').value.trim();
-    if (text === '') {
-        text = 'Kuues loeng';
-    }
+    const titleInput = document.getElementById('text-title-input');
+    const colorPicker = document.getElementById('color-picker');
     const title = document.getElementById('title');
-    title.style.color = 'red';  // Set color before changing the innerHTML
-    title.innerHTML = text;
+    
+    const newText = titleInput.value.trim() || 'Kuues loeng';
+    
+    title.textContent = newText;
+    title.style.color = colorPicker.value;
 }
 
 function changeSubTitle() {
-    console.log(document.getElementById('sub-title').innerHTML = 'Uus alam pealkiri');
+    let text = document.getElementById('text-sub-title-input').value;
+    if (text === '') {
+        text = 'Teine pealkiri';
+    }
+    document.getElementById('sub-title').textContent = text;
 }
 
-
+function login() {
+    const pinInput = document.getElementById('pin');
+    const status = document.getElementById('staatus');
+    
+    if (/^\d{4}$/.test(pinInput.value)) {
+        if (pinInput.value === '1234') {
+            status.textContent = 'Sisse logitud';
+            status.style.color = 'green';
+        } else {
+            status.textContent = 'Vale PIN';
+            status.style.color = 'red';
+            pinInput.value = '';
+            pinInput.focus();
+        }
+    } else {
+        status.textContent = 'Palun sisesta 4-kohaline number';
+        status.style.color = 'orange';
+        pinInput.value = '';
+        pinInput.focus();
+    }
+}
